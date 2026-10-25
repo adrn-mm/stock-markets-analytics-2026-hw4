@@ -1,0 +1,24 @@
+[     6s] CATEGORICAL used for dummies: ['Month', 'Weekday', 'Ticker', 'ticker_type', 'month_wom']
+[     6s] df_with_dummies[NUMERICAL+DUMMIES] -> 301 features (115 dummies)
+[     7s] share of class 1 in target: 0.491; growth_future_30d median=1.0206
+[    11s] fit DT depth 10
+[    28s] fit DT depth 4
+[    36s] fit DT depth 7 (clf_best)
+[    48s] fit RF depth 13 x100 (rf_best)
+[    81s] RF fitted
+
+===== df_sim1_results =====
+                       prediction  sim1_count_investments  sim1_gross_rev  sim1_fees  sim1_net_rev  sim1_fees_percentage  sim1_average_net_revenue  sim1_avg_investments_per_day  sim1_capital  sim1_CAGR  sim1_growth_capital_4y
+0                pred0_manual_cci                     921       1839.3929     -184.2     1655.1929                0.1001                    1.7972                        1.8758        6000.0     1.0628                  1.2759
+1            pred1_manual_prev_g1                   19158      44647.3669    -3831.6    40815.7669                0.0858                    2.1305                       18.4212       72000.0     1.1188                  1.5669
+2    pred2_manual_prev_g1_and_snp                   15244      33808.0942    -3048.8    30759.2942                0.0902                    2.0178                       21.7151       75000.0     1.0897                  1.4101
+3            pred3_manual_dgs10_5                   15910      40723.8030    -3182.0    37541.8030                0.0781                    2.3596                       31.9478       99000.0     1.0837                  1.3792
+4     pred4_manual_dgs10_fedfunds                   15921      18532.8800    -3184.2    15348.6800                0.1718                    0.9641                       31.9058       99000.0     1.0367                  1.1550
+5                    pred5_clf_10                    7337      18975.5556    -1467.4    17508.1556                0.0773                    2.3863                        8.0098       30000.0     1.1218                  1.5836
+6                     pred6_clf_4                    7209      24005.7549    -1441.8    22563.9549                0.0601                    3.1300                       30.8077       99000.0     1.0527                  1.2279
+7           pred7_clf_second_best                   10532      24570.0087    -2106.4    22463.6087                0.0857                    2.1329                       12.6739       57000.0     1.0866                  1.3941
+8   pred8_clf_second_best_rule_56                   10276      22124.8483    -2055.2    20069.6483                0.0929                    1.9531                       12.4860       54000.0     1.0822                  1.3717
+9   pred9_clf_second_best_rule_66                    9746      19278.9596    -1949.2    17329.7596                0.1011                    1.7781                       13.4799       57000.0     1.0686                  1.3040
+10         pred10_rf_best_rule_55                     171       1303.9586      -34.2     1269.7586                0.0262                    7.4255                        1.9213        6000.0     1.0492                  1.2116
+11         pred11_rf_best_rule_65                       3         67.4523       -0.6       66.8523                0.0089                   22.2841                        1.0000        3000.0     1.0055                  1.0223
+[    87s] saved results_q3.json
